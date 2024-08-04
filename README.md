@@ -207,3 +207,115 @@ Target the `.penguin-head` element, and give it a `width` `half of its parent's`
 *Most* penguins do not have a square head.
 
 Give the penguin a slightly oval head by setting the radius of the top corners to `70%` and the radius of the bottom corners to `65%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 70% 70% 65% 65%;
+>```
+
+## Step 32
+
+Target the `.penguin-body` element, and give it a `width` of `53%`, and a `height` of `45%`. Then, set the `background` to a linear gradient at `45deg`, `rgb(134, 133, 133)` from `0%`, `rgb(234, 231, 231)` from `25%`, and `white` from `67%`.
+
+>Example Code
+>
+>```background
+>background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
+>```
+
+## Step 33
+
+Another interesting fact about penguins is that they do not have square bodies.
+
+Use the `border-radius` property with a value of `80% 80% 100% 100%`, to give the penguin a slightly rounded body.
+
+## Step 34
+
+Target all descendent elements of the `.penguin` element, and give them a `position` of `absolute`.
+
+>Example Code
+>
+>```penguin
+>.penguin * {
+>    position: absolute;
+>}
+>```
+
+## Step 35
+
+Position the `.penguin-head` element `10%` from the `top`, and `25%` from the `left` of its parent.
+
+## Step 36
+
+Position the `.penguin-body` element `40%` from the `top`, and `23.5%` from the `left` of its parent.
+
+## Step 37
+
+Change the stack level of the `.penguin-head` element such that it appears in front of the `.penguin-body` element.
+
+>Example Code
+>
+>```z-index
+>z-index: 1;
+>```
+
+## Step 38
+
+To give the penguin body a crest, create a pseudo-element that is the first child of the `.penguin-body` element. Set the `content` property of the pseudo-element to an empty string.
+
+>Example Code
+>
+>```pseudo
+>.penguin-body::before {
+>    content: "";
+>}
+>```
+
+## Step 39
+
+`Position` the pseudo-element relative to its closest positioned ancestor.
+
+>Example Code
+>
+>```position
+>position: absolute;
+>```
+
+## Step 40
+
+Give the pseudo-element a `width` `half that of its parent`, a `height` of `45%`, and a `background-color` of `gray`.
+
+## Step 41
+
+Position the pseudo-element `10%` from the `top` and `25%` from the `left` of its parent.
+
+## Step 42
+
+Round off the crest, by giving the pseudo-element bottom corners a radius of `100%`, leaving the top corners at `0%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 0% 0% 100% 100%;
+>```
+
+## Step 43
+
+Increase the pseudo-element's transparency by `30%`.
+
+>Example Code
+>
+>```opacity
+>opacity: 70%;
+>```
+
+## Step 44
+
+Start the penguin's face, by adding two `div` elements within `.penguin-head,` and giving them both a `class` of `face`.
+
+## Step 45
+
+Give the `.face` elements a `width` of `60%`, a `height` of `70%`, and a `background-color` of `white`.
+
+## Step 46
