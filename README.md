@@ -423,3 +423,31 @@ Target the `.eye` element with the `left` class, and position it `25%` from the 
 ## Step 60
 
 Within each `.eye` element, add a `div` with a `class` of `eye-lid`.
+
+## Step 61
+
+Target the `.eye-lid` elements, and give them a `width` of `150%`, `height` of `100%`, and `background-color` of `--penguin-face`.
+
+>Example Code
+>
+>```var
+>background-color: var(--penguin-face);
+>```
+
+## Step 62
+
+Position the `.eye-lid` elements `25%` from the top, and `-23%` from the left of their parents. Then, give all corners a radius of `50%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 50%;
+>```
+
+## Step 63
+
+Below the `.eye.right` element, add two `div` elements each with a `class` of `blush`. Also, give the first `.blush` element a `class` of `left`, and the second `.blush` element a `class` of `right`.
+
+## Step 64
+
+Target the `.blush` elements, and give them a `width` of `15%`, `height` of `10%`, and `background-color` of `pink`.
