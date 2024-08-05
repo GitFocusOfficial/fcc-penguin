@@ -451,3 +451,98 @@ Below the `.eye.right` element, add two `div` elements each with a `class` of `b
 ## Step 64
 
 Target the `.blush` elements, and give them a `width` of `15%`, `height` of `10%`, and `background-color` of `pink`.
+
+## Step 65
+
+Position the `.blush` elements `65%` from the top of their parent, and give all corners a radius of `50%`.
+
+## Step 66
+
+Target the `.blush` element with a `class` of `left`, and position it `15%` left of its parent. Then, target the `.blush` element with a `class` of `right`, and position it `15%` right of its parent.
+
+>Example Code
+>
+>```blush
+>.blush.left {
+>    left: 15%;
+>}
+>
+>.blush.right {
+>    right: 15%;
+>}
+>```
+
+## Step 67
+
+Below the `.blush.right` element, add two `div` elements each with a `class` of `beak`. Also, give the first `.beak` element a `class` of `top`, and the second `.beak` element a class of `bottom`.
+
+## Step 68
+
+Target the `.beak` elements, and give them a `height` of `10%`, `background-color` of `orange`, and give all corners a radius of `50%`.
+
+## Step 69
+
+Target the `.beak` element with a `class` of `top`, give it a `width` of `20%`, and `position` it `60%` from the top, and `40%` from the left of its parent.
+
+## Step 70
+
+Target the `.beak` element with a `class` of `bottom`, and give it a `width` `4%` smaller than `.beak.top`, `5%` further from the top, and `2%` further from the left of its parent than `.beak.top`.
+
+## Step 71
+
+The penguin's body looks a bit plain. Spruce him up by adding a `div` element with a `class` of `shirt`, immediately before the `.penguin-body` element.
+
+## Step 72
+
+Within the `.shirt` element, add a `div` with the following emoji as content: `💜`
+
+## Step 73
+
+Within `.shirt`, after the `div` element, add a `p` element with the following content: `I CSS`
+
+## Step 74
+
+Target the `.shirt` element, and set its `font-size` to `25px`, `font-family` to `Helvetica` with a fallback of `sans-serif`, and `font-weight` to `bold`.
+
+## Step 75
+
+In some browsers, the heart emoji may look slightly different from the previous step. This is because some of the character's properties were overridden by the `font-weight` style of `bold`.
+
+Fix this, by targeting the `div` with the heart emoji, and setting its `font-weight` to its original value.
+
+>Example Code
+>
+>```div
+>.shirt div {
+>  font-weight: normal;
+>}
+>```
+
+## Step 76
+
+Position the `div` with the heart emoji `22.5px` from the `top`, and `12px` from the `left` of its parent.
+
+## Step 77
+
+Position the `.shirt` element `165px` from the `top`, and `127.5px` from the `left` of its parent. Then, increase its stacking order such that it appears above the `.penguin-body` element.
+
+>Example Code
+>
+>```z-index
+>z-index: 1;
+>```
+
+## Step 78
+
+For the shirt's final touch, set the `color` to `#6a6969`.
+
+## Step 79
+
+Fun fact: Penguins cannot stand without at least two feet.
+
+Within the `.penguin-body` element, add two `div` elements each with a `class` of `foot`. Give the first `.foot` a `class` of `left`, and the second `.foot` a `class` of `right`.
+
+## Step 80
+
+Target the `.foot` elements, and give them a `width` of `15%`, `height` of `30%`, and `background-color` of `orange`.
+
