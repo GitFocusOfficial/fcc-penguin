@@ -319,3 +319,87 @@ Start the penguin's face, by adding two `div` elements within `.penguin-head,` a
 Give the `.face` elements a `width` of `60%`, a `height` of `70%`, and a `background-color` of `white`.
 
 ## Step 46
+
+Make the `top` corners of the `.face` elements have a radius of `70%`, and the `bottom` corners have a radius of `60%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 70% 70% 60% 60%;
+>```
+
+## Step 47
+
+Position the `.face` elements so that they are `15%` from the `top`.
+
+## Step 48
+
+Currently, the two `.face` elements are on top of each other.
+
+Fix this, by adding a `class` of `left` to the first `.face` element, and a `class` of `right` to the second `.face` element.
+
+## Step 49
+
+Target the `.face` element with the `left` class, and position it `5%` left of its parent.
+
+>Example Code
+>.face.left {
+>    left: 5%;
+>}
+>```
+
+## Step 50
+
+Target the `.face` element with the `right` class, and position it `5%` right of its parent.
+
+>Example Code
+>.face.right {
+>    right: 5%;
+>}
+>```
+
+## Step 51
+
+Below the `.face.right` element, add a `div` element with a `class` of `chin`.
+
+## Step 52
+
+Target the `.chin` element, and give it a `width` of `90%`, `height` of `70%`, and `background-color` of `white`.
+
+## Step 53
+
+Position the `.chin` element such that it is `25%` from the top, and `5%` from the left of its parent. Then, give the top corners a radius of `70%`, and the bottom corners a radius of `100%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 70% 70% 100% 100%;
+>top: 25%;
+>left: 5%;
+>```
+
+## Step 54
+
+So far, the `.face` and `.chin` elements have the same `background-color`.
+
+Create a custom CSS property called `--penguin-face`, and set it to `white`.
+
+>Example Code
+>
+>```root
+>:root {
+>    --penguin-face: white;
+>}
+>```
+
+## Step 55
+
+Where relevant, `replace property values` with your `--penguin-face` `variable`.
+
+Note: Change the existing `background-color` under `.face`, `.chin`
+
+>Example Code
+>
+>```var
+>background-color: var(--penguin-face);
+>```
