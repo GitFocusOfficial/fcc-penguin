@@ -731,3 +731,51 @@ Use the `wave` animation on the left arm. Have the animation last `3s`, infinite
 >```animation
 >animation: wave 3s linear infinite;
 >```
+
+## Step 101
+
+Target the `.penguin` element when it is active, and increase its size by `50%` in both dimensions.
+
+>Example Code
+>
+>```active
+>.penguin:active {
+>  transform: scale(1.5);
+>}
+>```
+
+## Step 102
+
+When you activate the `.penguin` element, it might look as though you can drag it around. This is not true.
+
+Indicate this to users, by giving the active element a `cursor` property of `not-allowed`.
+
+>Example Code
+>
+>```cursor
+>cursor: not-allowed;
+>```
+
+## Step 103
+
+Change the `.penguin` element's `transition` behavior during transformation to have a duration of `1s`, a timing function of `ease-in-out`, and a delay of `0ms`.
+
+>Example Code
+>
+>```transition
+>transition-duration: 1s;
+>transition-timing-function: ease-in-out;
+>transition-delay: 0ms;
+>```
+
+## Step 104
+
+Finally, calculate the `height` of the `.ground` element to be the height of the viewport minus the height of the `.penguin` element.
+
+Congratulations! You have completed the Responsive Web Design certification.
+
+>Example Code
+>
+>```calc
+>height: calc(100vh - 300px);
+>```
