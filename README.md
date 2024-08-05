@@ -396,7 +396,7 @@ Create a custom CSS property called `--penguin-face`, and set it to `white`.
 
 Where relevant, `replace property values` with your `--penguin-face` `variable`.
 
-Note: Replace the existing `background-color` under `.face`, `.chin`
+Note: Replace the existing `background-color` under `.face` and `.chin`
 
 >Example Code
 >
@@ -575,8 +575,8 @@ To make the penguin's feet look more *penguiny*, rotate the left foot by `80deg`
 >Example Code
 >
 >```transform
->transform: rotate(80deg);
->transform: rotate(-80deg);
+>transform: rotate(80deg); //for left
+>transform: rotate(-80deg); //for right
 >```
 
 ### Step 85
@@ -587,4 +587,147 @@ Change the stacking order of the `.foot` elements such that they appear beneath 
 >
 >```z-index
 >z-index: -1;
+>```
+
+## Step 86
+
+Fun fact: Penguins cannot fly without wings.
+
+Within `.penguin-body`, before the `.foot` elements, add two `div` elements each with a class of `arm`. Give the first `.arm` a `class` of `left`, and the second `.arm` a `class` of `right`.
+
+## Step 87
+
+Target the `.arm` elements, and give them a `width` of `30%`, a `height` of `60%`, and a `background` of linear gradient at `90deg` from clockwise, starting at `gray`, and ending at `rgb(209, 210, 199)`.
+
+## Step 88
+
+Create a custom CSS variable named `--penguin-skin`, and set it to `gray`. Then, replace all relevant property values with it.
+
+Note: Replace the background-color for .penguin-head, .penguin-body::before and .arm
+
+>Example Code
+>
+>```var
+>--penguin-skin: gray;
+>```
+
+## Step 89
+
+Target the `.arm` element with a `class` of `left`, and position it `35%` from the top, and `5%` from the left of its parent. Then, target the `.arm` element with a `class` of `right`, and position it `0%` from the top, and `-5%` from the right of its parent.
+
+## Step 90
+
+Within the `.arm.left` selector, alter the origin of the `transform` function to be the top left corner of its parent.
+
+>Example Code
+>
+>```transform-origin
+>transform-origin: 0% 0%;
+>```
+
+## Step 91
+
+To keep the linear gradient on the correct side of the penguin's left arm, first rotate it by `130deg`, then invert the x-axis.
+
+>Example Code
+>
+>```transform
+>transform: rotate(130deg) scaleX(-1);
+>```
+
+## Step 92
+
+Rotate the right arm by 45deg counterclockwise.
+
+>Example Code
+>
+>```transform
+>transform: rotate(-45deg);
+>```
+
+### Step 93
+
+Fun fact: Most, if not all, flippers are not naturally rectangles.
+
+Give the `.arm` elements' top-left, top-right, and bottom-right corners a radius of `30%`, and the bottom-left corner a radius of `120%`.
+
+>Example Code
+>
+>```radius
+>border-radius: 30% 30% 30% 120%;
+>```
+
+## Step 94
+
+Change the `.arm` elements' stacking order such that they appear behind the `.penguin-body` element.
+
+>Example Code
+>
+>```z-index
+>z-index: -1;
+>```
+
+## Step 95
+
+Now, you are going to use CSS animations to make the penguin wave.
+
+Define a new `@keyframes` named `wave`.
+
+## Step 96
+
+Give `wave` four waypoints starting at `10%`, and incrementing by `10%`.
+
+>Example Code
+>
+>```wave
+>@keyframes wave {
+>  10% {
+>
+>  }
+>  20% {
+>
+>  }
+>  30% {
+>
+>  }
+>  40% {
+>    
+>  }
+>}
+>```
+
+## Step 97
+
+Within the first waypoint, rotate to `110deg`, and retain the scaling of the left arm.
+
+>Example Code
+>
+>```transform
+>transform: rotate(110deg) scaleX(-1);
+>```
+
+## Step 98
+
+Within the second waypoint, rotate to `130deg`, and retain the scaling of the left arm.
+
+>Example Code
+>
+>```transform
+>transform: rotate(130deg) scaleX(-1);
+>```
+
+## Step 99
+
+For the third and fourth waypoints, repeat the `transform` pattern once more.
+
+Note: For the 30% repeat Step 97 then for the 40% repeat the Step 98
+
+## Step 100
+
+Use the `wave` animation on the left arm. Have the animation last `3s`, infinitely iterate, and have a linear timing function.
+
+>Example Code
+>
+>```animation
+>animation: wave 3s linear infinite;
 >```
